@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Orbitron:wght@800;900&family=Oswald&family=PT+Sans:wght@700&family=Poppins:wght@500&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    outline:0;
+    text-decoration:none;
+    box-sizing:border-box;
+}
+body {
+    background-image: url("https://imgur.com/2XWjJxs.gif");
+    background-size:cover;
+    background-position:center; 
+    width: 100%;
+    min-height:100vh;
+}
+.navigation {
+    background-color: rgba(0,0,0,.85);
+    top:0;
+    left:0;
+    width:100%;
+    padding:25px;
+    position: fixed;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    transition: 0.4s;
+    z-index:1000;
+}
+.menu {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.menu ul{
+    list-style:none;
+    display:flex;
+    position:relative;
+}
+
+.menu ul li a{
+    color:blueviolet;
+    padding: 0 18px;
+    text-transform: uppercase;
+    transition:all 0.3s;
+}
+.menu ul li a:hover{
+    color:violet;
+}
+
+/*Scroll bar*/
+::-webkit-scrollbar{
+    width:10%;
+}
+/*Dropdown*/
+.dropdown-item{
+    display:none;
+}
+.menu ul li:hover .dropdown-item {
+    display: block;
+    position: absolute;
+    left: 65px;
+    top: 100%;
+    background-color: black;
+}
+.dropdown-item ul{
+    display:block;
+    margin:10px;
+}
+.dropdown-item ul li{
+    width:180px;
+    padding:10px;
+}
+.dropdown-item ul li:hover{
+    background-color:mediumvioletred;
+    color:white;
+}
+.dropdown-item2 ul li:hover{
+    background-color:mediumvioletred;
+    color:white;
+}
+.dropdown-item2{
+    display:none;
+}
+.menu ul li:hover .dropdown-item2 {
+    display: block;
+    position: absolute;
+    left: 180px;
+    top:25px;
+    background-color: black;
+}
+
+.dropdown-item2 ul{
+    display:block;
+    margin:10px;
+}
+.dropdown-item2 ul li{
+    width:190px;
+    padding:10px;
+}
+
+.search-bar{
+    float:right;
+}
+form.search input[type=text]{
+    padding:8px;
+    font-size:16px;
+    border: 1px solid grey;
+    border-radius:5px;
+    width:230px;
+    background: #f1f1f1;
+}
+form.search button{
+    width:35px;
+    height:33px;
+    background-color:darkviolet;
+    color:white;
+    font-size:16px;
+    border: 1px solid grey;
+    border-radius:5px;
+    cursor:pointer;
+}
+form.search button:hover{
+    background: violet;
+    color:black;
+}
+form.search::after{
+    content: "";
+    clear:both;
+    display:table;
+}
+.logo {
+    padding: 12px;
+    color: white;
+    font-size: 30px;
+    font-family: 'Orbitron', sans-serif;
+}
+.logow {
+    color: #ff0090;
+}
+
+/*Home caption*/
+.caption {
+    width: 100%;
+    color: white;
+    position: relative;
+    z-index: 20;
+    text-align: center;
+    top:280px;
+    
+}
+.caption h2 {
+    text-transform:uppercase;
+    font-size: 24px;
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+.caption h1 {
+    text-transform: uppercase;
+    font-size: 60px;
+    font-family: 'Oswald', sans-serif;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow{
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px blueviolet, 0 0 40px blueviolet, 0 0 50px blueviolet, 0 0 60px blueviolet, 0 0 70px blueviolet;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 20px blue, 0 0 30px blue, 0 0 40px blue, 0 0 50px blue, 0 0 60px blue, 0 0 70px blue;
+    }
+}
+.caption p {
+    text-transform: uppercase;
+    font-size: 18px;
+    margin:0;
+    line-height:25px;
+    font-family:'Inter', sans-serif;
+}
+.caption .play {
+    padding: 8px 15px;
+    display: inline-block;
+    margin: 20px 0;
+    border: 3px solid white;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    background-color: blueviolet;
+    -webkit-animation-duration: 300ms;
+}
+.caption .play:hover{
+    background-color: deeppink;
+    color: aliceblue;
+    box-shadow: 0 0 20px deeppink;
+}

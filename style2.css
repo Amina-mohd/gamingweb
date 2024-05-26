@@ -1,0 +1,510 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Orbitron:wght@800;900&family=Oswald&family=PT+Sans:wght@700&family=Poppins:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0e122d;
+}
+
+.navigation {
+    background-color: rgba(0,0,0,.85);
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.4s;
+    z-index: 1000;
+}
+
+.menu {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    position: relative;
+}
+
+.menu ul li a {
+    color: blueviolet;
+    padding: 0 18px;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+.menu ul li a:hover {
+   color: violet;
+}
+
+/*Scroll bar*/
+::-webkit-scrollbar {
+    width: 10%;
+}
+/*Dropdown*/
+.dropdown-item {
+    display: none;
+}
+
+.menu ul li:hover .dropdown-item {
+    display: block;
+    position: absolute;
+    left: 65px;
+    top: 100%;
+    background-color: black;
+}
+
+.dropdown-item ul {
+    display: block;
+    margin: 10px;
+}
+
+    .dropdown-item ul li {
+        width: 180px;
+        padding: 10px;
+    }
+
+        .dropdown-item ul li:hover {
+            background-color: mediumvioletred;
+            color: white;
+        }
+
+.dropdown-item2 ul li:hover {
+    background-color: mediumvioletred;
+    color: white;
+}
+
+.dropdown-item2 {
+    display: none;
+}
+
+.menu ul li:hover .dropdown-item2 {
+    display: block;
+    position: absolute;
+    left: 180px;
+    top: 25px;
+    background-color: black;
+}
+
+.dropdown-item2 ul {
+    display: block;
+    margin: 10px;
+}
+
+.dropdown-item2 ul li {
+    width: 190px;
+    padding: 10px;
+}
+
+.search-bar {
+    float: right;
+}
+
+form.search input[type=text] {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: 230px;
+    background: #f1f1f1;
+}
+
+form.search button {
+    width: 35px;
+    height: 33px;
+    background-color: darkviolet;
+    color: white;
+    font-size: 16px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    form.search button:hover {
+        background: violet;
+        color: black;
+    }
+
+form.search::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.logo {
+    padding: 12px;
+    color: white;
+    font-size: 30px;
+    position: relative;
+    font-family: 'Orbitron', sans-serif;
+}
+.logow {
+    color: #ff0090;
+}
+
+/*Games*/
+.game-box {
+    margin-left: 5%;
+    margin-top:120px;
+}
+    .game-box h1 {
+        font-family: 'Orbitron', sans-serif;
+        font-size: 35px;
+        text-align: center;
+        color: white;
+        animation: glow 3s ease-in-out infinite alternate;
+        position: relative;
+        animation-fill-mode: forwards;
+        padding: 5px 5px;
+    }
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px blueviolet, 0 0 40px blueviolet, 0 0 50px blueviolet, 0 0 60px blueviolet, 0 0 70px blueviolet;
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 20px blue, 0 0 30px blue, 0 0 40px blue, 0 0 50px blue, 0 0 60px blue, 0 0 70px blue;
+    }
+}
+.color{
+    color:orange;
+}
+.link1 {
+    padding: 6px 13px;
+    margin: 20px 12px;
+    border: 3px solid white;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    background-color: blueviolet;
+    -webkit-animation-duration: 300ms;
+}
+.link1:hover {
+    background-color: deeppink;
+    color: aliceblue;
+    box-shadow: 0 0 20px deeppink;
+}
+
+/*Game cards*/
+.card-body {
+    width:100%;
+    background-color: #ca18e7;
+    justify-content: center;
+    align-items: center;
+    object-fit:cover;
+}
+.box{
+    width: 380px;
+    height: 440px;
+    background-color: darkblue;
+    border-radius: 10px;
+    box-shadow: 2px 10px 12px rgba(0,0,0,0.5);
+    
+    margin: 20px 30px;
+    display: inline-block;
+}
+.model{
+    height: 215px;
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.details{
+    display: flex;
+    padding: 5px;
+}
+.PUBG{
+    border-radius: 10px;
+    padding:0 5px;
+    width: 120px;
+}
+.game1texts {
+    color: white;
+    font-size: 16px;
+    font-family: 'Inter',sans-serif;
+    line-height: 30px;
+    margin-left: 3px;
+}
+.box button{
+    margin-left: 15px;
+}
+.box:hover{
+    transform-style:preserve-3d;
+    transform: scale(1.02);
+    transition: all ease 0.5s;
+}
+.COD {
+    border-radius: 10px;
+    padding: 0 5px;
+    width: 120px;
+}
+.FreeFire {
+    border-radius: 10px;
+    padding: 0 5px;
+    width: 120px;
+}
+.Fortnite {
+    border-radius: 10px;
+    padding: 0 5px;
+    width: 120px;
+}
+.ACV {
+    border-radius: 10px;
+    padding: 0 5px;
+    width: 120px;
+}
+.GTA, .Apex, .Assetto {
+    border-radius: 10px;
+    padding: 0 5px;
+    width: 120px;
+}
+.GI, .Minecraft, .Eldenring {
+    border-radius: 10px;
+    padding: 0 5px;
+    width: 120px;
+}
+@media screen and (max-width: 500px) {
+    .box {
+        width: 100%;
+    }
+}
+/*button*/
+.more{
+    margin: 0 25%;
+}
+.link2 {
+    padding: 6px 13px;
+    margin: 20px 12px;
+    border: 3px solid white;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    background-color: blueviolet;
+    -webkit-animation-duration: 300ms;
+}
+
+.link2:hover {
+    background-color: deeppink;
+    color: aliceblue;
+    box-shadow: 0 0 20px deeppink;
+    border-bottom-right-radius:40px 40px;
+    border-top-right-radius:40px 40px;
+}
+
+/*Contact us*/
+.contact{
+    padding: 110px 50px;
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact img{
+    width: 45%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.contact .form-check{
+    width: 50%;
+    margin: 40px;
+}
+.contact .form-check h1{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+.contact .form-check .input-text{
+    margin: 10px 0;
+}
+.contact .form-check .input-text p{
+    color: deeppink;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+}
+.contact .form-check .input-text input,
+.contact .form-check .input-text textarea {
+    border: none;
+    padding: 10px;
+    width: 100%;
+    color: #fff;
+    background: #1b2141;
+    min-height: 15px;
+    font-size: 1.1em;
+    font-family: 'Inter', sans-serif;
+}
+.contact .form-check .input-text textarea{
+    height: 128px;
+}
+.contact .form-check .input-text input[type="submit"] {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 15px 0;
+    outline: none;
+    background: transparent;
+    border: 3px solid #fff;
+    font-weight: 700;
+    width: 150px;
+    border-radius: 8px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    -webkit-animation-duration: 300ms;
+}
+.contact .form-check .input-text input[type="submit"]:hover {
+    background-color: deeppink;
+    color: aliceblue;
+    box-shadow: 0 0 20px deeppink;
+}
+
+/*Footer*/
+footer {
+    padding: 10px 100px;
+    background-color: rgba(0,0,0,.85);
+    width: 100%;
+    position: absolute;
+    align-items: center;
+    transition: 0.4s;
+    z-index: 1000;
+}
+footer .info{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo2 {
+    color: white;
+    font-size: 30px;
+    position: relative;
+    font-family: 'Orbitron', sans-serif;
+}
+.logow {
+    color: #ff0090;
+}
+footer .info .logo2{
+    position: relative;
+    font-size: 2em;
+    font-weight: 700;
+}
+footer .info p{
+    color: #dbd9d9;
+    font-family: 'Inter', sans-serif;
+}
+footer .info ul{
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+footer .info ul li {
+    list-style: none;
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid blueviolet;
+}
+footer .info ul li:hover{
+    background: deeppink;
+    border: none;
+    box-shadow: 0 0 20px deeppink;
+}
+footer .info ul li a i{
+    font-size: 1.2em;
+    color: #fff;
+}
+footer .info ul li:hover a i {
+    color: #0e122d;
+}
+
+/*reviews*/
+.reviews{
+    width: 100%;
+    height: 100vh;
+    margin-top: 120px;
+}
+.reviews h1 {
+    font-family: 'Inter',sans-serif;
+    font-size: 23px;
+    text-align: center;
+    color: white;
+    background-color: #ff0038;
+    padding: 8px;
+}
+.review-box{
+    margin-left:1.3%;
+    margin-top: 1%;
+}
+.review-box img{
+    width: 98%;
+}
+.review-box h2 .headtext{
+    background-color: red;
+    color: white;
+    text-transform:uppercase;
+    font-size: 21px;
+    letter-spacing: 2px;
+    padding: 6px 5px;
+    border-radius: 6px;
+}
+.review-box h2{
+    font-family: 'Arial Rounded MT';
+    color: #fff;
+    margin-left: 1.3%;
+    margin-top: 1.5%;
+    color: mediumslateblue;
+}
+.texts{
+    color: #fff;
+    font-family: Arial;
+    font-size: 18px;
+    padding: 14px 4px;
+    margin-left: 1%;
+}
+.time {
+    color: #f4f0ec;
+    font-family: Arial;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-left: 1.29%;
+}
+.checkout{
+    margin-left: 33%;
+}
+.checkout .news {
+    padding: 8px 15px;
+    display: inline-block;
+    margin: 20px 0;
+    border: 3px solid white;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    background-color: blueviolet;
+    -webkit-animation-duration: 300ms;
+}
+.checkout .news:hover {
+    background-color: deeppink;
+    color: aliceblue;
+    box-shadow: 0 0 20px deeppink;
+    border-radius: 40px;
+}
